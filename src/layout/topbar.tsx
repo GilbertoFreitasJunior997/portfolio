@@ -1,14 +1,18 @@
+import { ROUTES } from "../routes";
+
 export const Topbar = () => {
   return (
-    <aside className="w-full text-sm bg-gray-50 border-b border-b-gray-100 h-12 flex items-center justify-between px-20">
+    <aside className="flex items-center justify-between w-full h-12 px-20 text-sm border-b bg-gray-50 border-b-gray-100">
       <div>Gilberto</div>
       <nav>
         <ul className="flex gap-8">
-          <li>Introduction</li>
-          <li>About Me</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          {ROUTES.map((route) => {
+            return (
+              <li>
+                <a href={`#${route.id}`}>{route.label}</a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </aside>
