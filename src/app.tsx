@@ -1,3 +1,5 @@
+import { Layout } from "./layout";
+
 export const App = () => {
-  return <div className="bg-red-500">Hello world!</div>;
+  return <Layout>Hello world!</Layout>;
 };
