@@ -9,6 +9,7 @@ export type Route = {
   id: string;
   label: string;
   component: ReactElement;
+  hideLabel?: boolean;
 };
 
 export const ROUTES: Route[] = [
@@ -16,6 +17,7 @@ export const ROUTES: Route[] = [
     id: "intro",
     component: <Intro />,
     label: "Introduction",
+    hideLabel: true,
   },
   {
     id: "aboutme",
