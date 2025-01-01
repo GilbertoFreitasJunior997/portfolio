@@ -1,11 +1,11 @@
-import { ThemeSelector } from "@/components/theme-selector";
+import { Projects } from "./components/projects";
+import { WorkEducationTab } from "./components/work-education-tab";
 
 export default function Home() {
 	return (
-		<div className="bg-background text-foreground">
-			<p>Hello world!</p>
-
-			<ThemeSelector />
-		</div>
+		<>
+			<WorkEducationTab />
+			<Projects />
+		</>
 	);
 }
