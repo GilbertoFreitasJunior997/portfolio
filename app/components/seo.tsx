@@ -1,18 +1,17 @@
 import Head from "next/head";
 
+const siteUrl = "https://gilberto-freitas-portfolio.vercel.app/";
 export const SEOConfig = {
 	siteName: "Gilberto Freitas - Portfolio",
 	description:
 		"Professional portfolio showcasing my work in web development, including projects in React, Next.js, and more.",
-	siteUrl: "https://portfolio-psi-flax-74.vercel.app/",
 	twitterHandle: "@beto_peloso",
-	imageUrl: "https://portfolio-psi-flax-74.vercel.app/portfolio-display.png",
+	imageUrl: `${siteUrl}portfolio-display.png`,
 	ogType: "website",
 };
 
 export const SEO = () => {
-	const { siteName, description, ogType, imageUrl, siteUrl, twitterHandle } =
-		SEOConfig;
+	const { siteName, description, ogType, imageUrl, twitterHandle } = SEOConfig;
 
 	return (
 		<Head>
