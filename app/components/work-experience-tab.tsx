@@ -58,7 +58,7 @@ export const WorkExperienceTab = () => (
 			<TimelineItem
 				imageSrc="frg-logo.jpeg"
 				imageAlt="Company logo"
-				start="Apr 2021"
+				start="Jun 2022"
 				end="Nov 2023"
 				title="FRG Informática"
 				subtitle="Software Engineer"
