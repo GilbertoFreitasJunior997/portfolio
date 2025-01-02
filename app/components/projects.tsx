@@ -60,35 +60,13 @@ export const Projects = () => {
 				/>
 
 				<ProjectCard
-					title="SaaS Template"
-					description="A modern Next.js SaaS template featuring authentication, responsive design, ORM setup and customizable components to kickstart your next project."
-					image="saas-template-display.png"
-					source="https://github.com/GilbertoFreitasJunior997/nextjs-template"
-					skills={[
-						"NextJS",
-						"NodeJS",
-						"OAuth",
-						"LuciaAuth",
-						"TailwindCSS",
-						"DrizzleORM",
-						"Typescript",
-					]}
+					title="Redis Clone (WIP)"
+					description="A Redis clone with in-memory data storage and key-value operations. Delivered via HTTPS Api and a CLI client."
+					image="redis-display.jpg"
+					source="https://github.com/GilbertoFreitasJunior997/redis-clone"
+					skills={["NodeJS", "Bun", "HTTP", "Typescript", "CLI"]}
 				/>
-				<ProjectCard
-					title="SaaS Template"
-					description="A modern Next.js SaaS template featuring authentication, responsive design, ORM setup and customizable components to kickstart your next project."
-					image="saas-template-display.png"
-					source="https://github.com/GilbertoFreitasJunior997/nextjs-template"
-					skills={[
-						"NextJS",
-						"NodeJS",
-						"OAuth",
-						"LuciaAuth",
-						"TailwindCSS",
-						"DrizzleORM",
-						"Typescript",
-					]}
-				/>
+
 				<ProjectCard
 					title="SaaS Template"
 					description="A modern Next.js SaaS template featuring authentication, responsive design, ORM setup and customizable components to kickstart your next project."

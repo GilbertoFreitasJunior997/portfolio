@@ -22,30 +22,27 @@ export const EducationTab = () => (
 				imageSrc="fatec-logo.jpg"
 				imageAlt="Fatec logo"
 				start="Jun 2022"
-				end="Nov 2023"
-				title="FRG Informática"
-				subtitle="Frontend Engineer"
+				end="Dec 2022"
+				title="FATEC Garça"
+				subtitle="Technologist, Systems Analysis and Development"
 			>
-				<TimelineListItem>Worked</TimelineListItem>
-				<TimelineListItem>Developed</TimelineListItem>
+				<TimelineListItem>
+					Degree in Systems Analysis and Development, where I deepened my
+					knowledge in data structures and had an introduction to Python.
+				</TimelineListItem>
 			</TimelineItem>
 			<TimelineItem
 				imageSrc="etec-logo.jpg"
 				imageAlt="Etec logo"
 				start="Apr 2021"
 				end="Jun 2022"
-				title="FRG Informática"
-				subtitle="Trainee Developer"
+				title="ETEC Garça"
+				subtitle="Technical course, Systems Development"
 			>
 				<TimelineListItem>
-					Mastered over 40 development courses, excelling in web programming
-					with HTML, CSS, JavaScript, and REST APIs, leading to a strong
-					foundation for software development.
-				</TimelineListItem>
-				<TimelineListItem>
-					Maintained a legacy product, receiving tasks in kanban methods,
-					initially on Redmine and later on Trello, using Git for version
-					control.
+					Technical course in the field of Systems Development. I learned
+					object-oriented programming (OOP) and had an introduction to
+					programming languages such as C# and Javascript.
 				</TimelineListItem>
 			</TimelineItem>
 		</Timeline>
