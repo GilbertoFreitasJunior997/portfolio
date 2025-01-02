@@ -30,7 +30,7 @@ export const Header = () => {
 				<MapPinIcon className="size-4" /> São Paulo, Brazil
 			</h3>
 
-			<section className="flex gap-2 mt-4 text-foreground/80">
+			<section className="flex gap-4 mt-4 text-foreground/80">
 				<Button type="button" variant="outline" className="" asChild={true}>
 					<a href="gilberto-freitas-resume.pdf" download={true}>
 						Resume <FileDownIcon className="size-4" />

@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
 	GithubIcon,
 	LinkedinIcon,
@@ -12,9 +13,11 @@ type SocialLinkProps = {
 
 const SocialLink = ({ icon: Icon, href }: SocialLinkProps) => (
 	<li className="grid place-content-center size-[18px] cursor-pointer">
-		<a href={href} target="_blank" rel="noopener noreferrer">
-			<Icon className="size-full" />
-		</a>
+		<Button variant="ghost" size="icon" className="rounded-full" asChild={true}>
+			<a href={href} target="_blank" rel="noopener noreferrer">
+				<Icon className="size-full" />
+			</a>
+		</Button>
 	</li>
 );
 
