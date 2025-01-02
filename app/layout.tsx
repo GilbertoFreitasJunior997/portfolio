@@ -1,9 +1,8 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import { metadataConfig } from "@/lib/seo";
 import { ThemeProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
 import type { PropsWithChildren } from "react";
-import { SEO, SEOConfig } from "./components/seo";
 import { Shell } from "./components/shell";
 
 const geistSans = Geist({
@@ -16,15 +15,11 @@ const geistMono = Geist_Mono({
 	subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-	title: SEOConfig.siteName,
-};
+export const metadata = metadataConfig;
 
 export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html lang="en" suppressHydrationWarning={true}>
-			<SEO />
-
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>

@@ -21,7 +21,6 @@ export const Projects = () => {
 			return;
 		}
 
-		console.log(ulRef.current);
 		setFullHeight(ulRef.current.scrollHeight);
 	}, []);
 
