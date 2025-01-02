@@ -30,7 +30,7 @@ export const SocialLinks = () => {
 			/>
 			<SocialLink
 				icon={LinkedinIcon}
-				href="https://www.linkedin.com/in/gilberto-freitas-junior-575362212/"
+				href="https://www.linkedin.com/in/gilberto-freitas-junior/"
 			/>
 			<SocialLink
 				icon={MailIcon}
