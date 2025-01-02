@@ -11,13 +11,13 @@ export const Timeline = ({ children }: PropsWithChildren) => {
 };
 
 type TimelineItemProps = {
-	imageSrc: string;
-	imageAlt: string;
+	imageSrc?: string;
+	imageAlt?: string;
 
 	start: string;
 	end: string;
 
-	title: string;
+	title?: string;
 	subtitle: string;
 } & PropsWithChildren;
 
@@ -32,15 +32,17 @@ export const TimelineItem = ({
 }: TimelineItemProps) => {
 	return (
 		<li className="relative ml-10 py-4">
-			<div className="absolute -left-16 top-4 flex items-center justify-center rounded-full">
-				<span className="relative flex shrink-0 overflow-hidden rounded-full size-12">
-					<img
-						className="aspect-square h-full w-full bg-background object-cover object-center"
-						alt={imageAlt}
-						src={imageSrc}
-					/>
-				</span>
-			</div>
+			{!!imageSrc && (
+				<div className="absolute -left-16 top-4 flex items-center justify-center rounded-full">
+					<span className="relative flex shrink-0 overflow-hidden rounded-full size-12">
+						<img
+							className="aspect-square h-full w-full bg-background object-cover object-center"
+							alt={imageAlt}
+							src={imageSrc}
+						/>
+					</span>
+				</div>
+			)}
 
 			<div className="flex flex-1 flex-col justify-start gap-1">
 				<time className="text-xs text-muted-foreground">
@@ -49,7 +51,7 @@ export const TimelineItem = ({
 					<span>{end}</span>
 				</time>
 
-				<h2 className="font-semibold leading-none">{title}</h2>
+				{!!title && <h2 className="font-semibold leading-none">{title}</h2>}
 				<p className="text-sm text-muted-foreground">{subtitle}</p>
 				<ul className="ml-4 list-outside list-disc">{children}</ul>
 			</div>

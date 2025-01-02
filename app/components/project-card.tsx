@@ -28,7 +28,7 @@ export const ProjectCard = ({
 	website,
 }: ProjectCardProps) => {
 	return (
-		<li className="col-span-2 md:col-span-1 min-h-[400px]">
+		<li className="col-span-2 md:col-span-1 h-[525px]">
 			<Card className="size-full">
 				<CardHeader className="p-0">
 					<img
@@ -43,18 +43,24 @@ export const ProjectCard = ({
 					</div>
 				</CardHeader>
 
-				<CardContent className="flex gap-2 w-full flex-wrap">
-					{skills?.length &&
-						skills.map((skill) => (
-							<Badge key={skill} variant="secondary" className="text-[10px]">
-								{skill}
-							</Badge>
-						))}
+				<CardContent className="flex w-full items-end">
+					<section className="flex gap-2 flex-wrap">
+						{skills?.length &&
+							skills.map((skill) => (
+								<Badge
+									key={skill}
+									variant="secondary"
+									className="text-[10px] h-fit"
+								>
+									{skill}
+								</Badge>
+							))}
+					</section>
 				</CardContent>
 
 				<CardFooter className="space-x-2">
 					{website && (
-						<Button size="sm">
+						<Button size="sm" asChild>
 							<a
 								href={website}
 								target="_blank"
@@ -67,7 +73,7 @@ export const ProjectCard = ({
 					)}
 
 					{source && (
-						<Button size="sm">
+						<Button size="sm" asChild>
 							<a
 								href={source}
 								target="_blank"

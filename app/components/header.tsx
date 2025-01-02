@@ -1,29 +1,44 @@
+"use client";
+
+import { ThemeSelector } from "@/components/theme-selector";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import { FileDownIcon, MapPinIcon } from "lucide-react";
 import { SocialLinks } from "./social-links";
 
 export const Header = () => {
 	return (
-		<section className="text-muted-foreground text-lg">
-			<h2 className="text-3xl text-foreground font-bold mb-px">
-				Gilberto Freitas
-			</h2>
+		<motion.header
+			className="text-muted-foreground"
+			initial={{ y: -5, opacity: 0.5 }}
+			animate={{ y: 0, opacity: 1 }}
+			transition={{ type: "spring", stiffness: 100, damping: 15 }}
+		>
+			<section className="mb-2 justify-between flex items-center">
+				<h2 className="text-[44px] text-foreground font-bold ">
+					Gilberto Freitas
+				</h2>
+				<ThemeSelector className="hidden md:flex" />
+			</section>
 
-			<h3 className="text-muted-foreground">Software Engineer</h3>
-			<h3 className="flex gap-1 items-center text-sm font-semibold">
+			<section className="flex items-center justify-between mb-1">
+				<h3 className="text-muted-foreground text-2xl">Software Engineer</h3>
+				<ThemeSelector className="flex md:hidden" />
+			</section>
+
+			<h3 className="flex gap-1 items-center font-semibold">
 				<MapPinIcon className="size-4" /> São Paulo, Brazil
 			</h3>
 
-			<section className="flex gap-2 mt-4">
-				<a
-					href="gilberto-freitas-resume.pdf"
-					download={true}
-					className="border-2 border-border flex w-fit px-2 text-sm font-bold rounded-md items-center justify-center gap-1"
-				>
-					Resume <FileDownIcon className="size-4" />
-				</a>
+			<section className="flex gap-2 mt-4 text-foreground/80">
+				<Button type="button" variant="outline" className="" asChild={true}>
+					<a href="gilberto-freitas-resume.pdf" download={true}>
+						Resume <FileDownIcon className="size-4" />
+					</a>
+				</Button>
 
 				<SocialLinks />
 			</section>
-		</section>
+		</motion.header>
 	);
 };

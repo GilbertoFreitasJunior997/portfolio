@@ -1,8 +1,13 @@
 "use client";
+import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "./ui/button";
 
-export const ThemeSelector = () => {
+export type ThemeSelectorProps = {
+	className?: string;
+};
+
+export const ThemeSelector = ({ className }: ThemeSelectorProps) => {
 	const { theme, setTheme } = useTheme();
 
 	const handleClick = () => {
@@ -11,5 +16,14 @@ export const ThemeSelector = () => {
 		setTheme(newTheme);
 	};
 
-	return <Button onClick={handleClick}> Change Theme </Button>;
+	return (
+		<Button
+			variant="ghost"
+			size="icon"
+			onClick={handleClick}
+			className={className}
+		>
+			{theme === "light" ? <SunIcon /> : <MoonIcon />}
+		</Button>
+	);
 };
