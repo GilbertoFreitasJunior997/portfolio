@@ -10,12 +10,33 @@ export const Timeline = ({ children }: PropsWithChildren) => {
 	);
 };
 
+type TimelineTimeProps = {
+	start?: string;
+	end?: string;
+};
+const TimelineTime = ({ start, end }: TimelineTimeProps) => {
+	if (!start || !end) {
+		return null;
+	}
+
+	return (
+		<time className="text-xs text-muted-foreground">
+			<span>{start}</span>
+			<span> - </span>
+			<span>{end}</span>
+		</time>
+	);
+};
+
 type TimelineItemProps = {
 	imageSrc?: string;
 	imageAlt?: string;
 
-	start: string;
-	end: string;
+	parentStart?: string;
+	parentEnd?: string;
+
+	start?: string;
+	end?: string;
 
 	title?: string;
 	subtitle: string;
@@ -24,6 +45,8 @@ type TimelineItemProps = {
 export const TimelineItem = ({
 	imageAlt,
 	imageSrc,
+	parentStart,
+	parentEnd,
 	start,
 	end,
 	title,
@@ -45,14 +68,12 @@ export const TimelineItem = ({
 			)}
 
 			<div className="flex flex-1 flex-col justify-start gap-1">
-				<time className="text-xs text-muted-foreground">
-					<span>{start}</span>
-					<span> - </span>
-					<span>{end}</span>
-				</time>
+				<TimelineTime start={parentStart} end={parentEnd} />
 
 				{!!title && <h2 className="font-semibold leading-none">{title}</h2>}
-				<p className="text-sm text-muted-foreground">{subtitle}</p>
+				<p className="text-sm text-muted-foreground">
+					{subtitle} <TimelineTime start={start} end={end} />
+				</p>
 				<ul className="ml-4 list-outside list-disc">{children}</ul>
 			</div>
 		</li>

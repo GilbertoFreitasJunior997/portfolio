@@ -21,8 +21,8 @@ export const EducationTab = () => (
 			<TimelineItem
 				imageSrc="fatec-logo.jpg"
 				imageAlt="Fatec logo"
-				start="Jun 2022"
-				end="Dec 2022"
+				parentStart="Jun 2022"
+				parentEnd="Dec 2022"
 				title="FATEC Garça"
 				subtitle="Technologist, Systems Analysis and Development"
 			>
@@ -34,8 +34,8 @@ export const EducationTab = () => (
 			<TimelineItem
 				imageSrc="etec-logo.jpg"
 				imageAlt="Etec logo"
-				start="Apr 2021"
-				end="Jun 2022"
+				parentStart="Apr 2021"
+				parentEnd="Jun 2022"
 				title="ETEC Garça"
 				subtitle="Technical course, Systems Development"
 			>

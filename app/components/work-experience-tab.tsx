@@ -21,6 +21,8 @@ export const WorkExperienceTab = () => (
 			<TimelineItem
 				imageSrc="harmonit-logo.jpeg"
 				imageAlt="Company logo"
+				parentStart="Nov 2023"
+				parentEnd="Oct 2024"
 				start="Nov 2023"
 				end="Oct 2024"
 				title="Harmonit"
@@ -58,7 +60,9 @@ export const WorkExperienceTab = () => (
 			<TimelineItem
 				imageSrc="frg-logo.jpeg"
 				imageAlt="Company logo"
-				start="Jun 2022"
+				parentStart="Apr 2021"
+				parentEnd="Nov 2023"
+				start="Jun"
 				end="Nov 2023"
 				title="FRG Informática"
 				subtitle="Software Engineer"
