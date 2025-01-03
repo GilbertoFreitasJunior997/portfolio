@@ -62,7 +62,7 @@ export const WorkExperienceTab = () => (
 				imageAlt="Company logo"
 				parentStart="Apr 2021"
 				parentEnd="Nov 2023"
-				start="Jun 2021"
+				start="Jun 2022"
 				end="Nov 2023"
 				title="FRG Informática"
 				subtitle="Software Engineer"
