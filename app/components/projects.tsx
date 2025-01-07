@@ -60,6 +60,34 @@ export const Projects = () => {
 				/>
 
 				<ProjectCard
+					title="DiverseBuy (WIP)"
+					description="A complete E-Commerce platform that allows users to manage their sales, shop from other sellers, and explore a diverse range of products."
+					image="saas-template-display.png"
+					website="https://ecommerce-client-theta-gules.vercel.app/"
+					source={[
+						{
+							source:
+								"https://github.com/GilbertoFreitasJunior997/ecommerce-client",
+							text: "Web",
+						},
+						{
+							source:
+								"https://github.com/GilbertoFreitasJunior997/ecommerce-server",
+							text: "Server",
+						},
+					]}
+					skills={[
+						"NodeJS",
+						"Express",
+						"Stripe",
+						"React",
+						"PostgreSQL",
+						"DrizzleORM",
+						"Supabase",
+					]}
+				/>
+
+				<ProjectCard
 					title="Redis Clone (WIP)"
 					description="A Redis clone with in-memory data storage and key-value operations. Delivered via HTTPS Api and a CLI client."
 					image="redis-display.jpg"
@@ -69,7 +97,7 @@ export const Projects = () => {
 
 				<ProjectCard
 					title="SaaS Template"
-					description="A modern Next.js SaaS template featuring authentication, responsive design, ORM setup and customizable components to kickstart your next project."
+					description="Modern Next.js SaaS template featuring authentication, responsive design, ORM setup and customizable components to kickstart your next project."
 					image="saas-template-display.png"
 					source="https://github.com/GilbertoFreitasJunior997/nextjs-template"
 					skills={[

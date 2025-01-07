@@ -10,13 +10,32 @@ import {
 } from "@/components/ui/card";
 import { GithubIcon, GlobeIcon } from "lucide-react";
 
+export type ProjectCardSource = {
+	text: string;
+	source: string;
+};
+
 export type ProjectCardProps = {
 	image: string;
 	title: string;
 	description: string;
 	skills?: string[];
-	source?: string;
+	source?: string | ProjectCardSource[];
 	website?: string;
+};
+
+type SourceIconProps = {
+	text: string;
+	source: string;
+};
+const SourceIcon = ({ text, source }: SourceIconProps) => {
+	return (
+		<Button size="sm" asChild>
+			<a href={source} target="_blank" rel="noreferrer" className="flex gap-2">
+				<GithubIcon /> {text}
+			</a>
+		</Button>
+	);
 };
 
 export const ProjectCard = ({
@@ -27,6 +46,17 @@ export const ProjectCard = ({
 	source,
 	website,
 }: ProjectCardProps) => {
+	const sources = source
+		? Array.isArray(source)
+			? source
+			: [
+					{
+						text: "Source",
+						source,
+					},
+				]
+		: [];
+
 	return (
 		<li className="col-span-2 md:col-span-1 h-[525px]">
 			<Card className="size-full">
@@ -72,18 +102,9 @@ export const ProjectCard = ({
 						</Button>
 					)}
 
-					{source && (
-						<Button size="sm" asChild>
-							<a
-								href={source}
-								target="_blank"
-								rel="noreferrer"
-								className="flex gap-2"
-							>
-								<GithubIcon /> Source
-							</a>
-						</Button>
-					)}
+					{sources.map((source) => (
+						<SourceIcon key={source.source} {...source} />
+					))}
 				</CardFooter>
 			</Card>
 		</li>
