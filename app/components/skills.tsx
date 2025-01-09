@@ -6,18 +6,19 @@ import { motion } from "framer-motion";
 const skills: string[] = [
 	"TypeScript",
 	"JavaScript",
-	"React",
-	"NextJS",
 	"NodeJS",
+	"NextJS",
+	"Express",
+	"React",
 	"TailwindCSS",
 	"Postgres",
 	"MySQL",
-	"C# ",
+	"Jest",
+	"Vitest",
 	"CI/CD",
 	"Pipelines",
 	"Docker",
 	"Git",
-	"Cloud  Solutions (AWS, Oracle, Azure)",
 ];
 
 export const Skills = () => {

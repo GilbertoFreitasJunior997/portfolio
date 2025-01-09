@@ -29,31 +29,27 @@ export const WorkExperienceTab = () => (
 				subtitle="Software Engineer"
 			>
 				<TimelineListItem>
-					Implemented new features and optimizations to the ERP system,
-					resulting in a 60% decrease in page load times, enhancing user
-					experience and overall system efficiency.
+					Implemented new features and optimizations on a ERP system, resulting
+					in a decrease on page load times, enhancing user experience and
+					overall system efficiency.
 				</TimelineListItem>
 				<TimelineListItem>
-					Enhanced user interface performance by 40% through the implementation
-					of React, TypeScript, TailwindCSS, and various UI tools, resulting in
+					Enhanced user interface performance through the implementation of
+					React, TypeScript, TailwindCSS, and various UI tools, resulting in
 					improved user satisfaction and engagement.
 				</TimelineListItem>
 				<TimelineListItem>
-					Improved the Bitbucket CI/CD pipeline, reducing deployment time by
-					90%, leading to faster feature delivery and increased productivity.
+					Created a CI/CD pipeline, reducing deployment time by 70%, leading to
+					faster feature delivery and increased productivity.
 				</TimelineListItem>
 				<TimelineListItem>
-					Apply agile methodologies to plan and manage sprints, ensuring all
-					tasks are completed efficiently and aligned with project objectives.
+					Delivered features by collaborating with 20+ developers in a
+					fast-paced environment, ensuring seamless communication across teams.
 				</TimelineListItem>
 				<TimelineListItem>
-					Mentored and guided a team of 4 developers, resulting in a improvement
-					in code quality, leading to a more efficient and seamless project
+					Mentored and guided 6 new developers, resulting in an improvement in
+					code quality, leading to a more efficient and seamless project
 					delivery process.
-				</TimelineListItem>
-				<TimelineListItem>
-					Work closely with other teams, including BackEnd and DevOps, to ensure
-					seamless integration and full functionality of developed solutions.
 				</TimelineListItem>
 			</TimelineItem>
 
@@ -73,24 +69,15 @@ export const WorkExperienceTab = () => (
 					improved operational efficiency.
 				</TimelineListItem>
 				<TimelineListItem>
-					Guided a group of 6 FrontEnd React engineers, integrating 3 new
-					interns and enforcing agile methodologies, leading to a boost in team
-					collaboration and successful sprint completion.
-				</TimelineListItem>
-				<TimelineListItem>
-					Streamlined software loading process, achieving a 60% improvement
-					through packaging enhancements and the creation of a multi-modular
-					microfrontend system with Single-SPA, resulting in enhanced
+					Streamlined software loading process, achieving improvement through
+					packaging enhancements and the creation of a multi-modular
+					microfrontend system with Single- SPA, resulting in enhanced
 					application performance and user satisfaction.
 				</TimelineListItem>
 				<TimelineListItem>
-					Established a CI/CD pipeline for automatic project deployment on AWS
-					S3 and file caching on AWS CloudFront.
-				</TimelineListItem>
-				<TimelineListItem>
-					Configured and managed all team tasks daily using ClickUp,
-					collaborating with the BackEnd team to integrate the software with a
-					RESTful API.
+					Facilitated seamless project updates within 6 months by implementing a
+					CI/CD pipeline, resulting in automatic deployments on AWS S3 and
+					improved caching on AWS CloudFront.
 				</TimelineListItem>
 			</TimelineItem>
 
@@ -100,17 +87,9 @@ export const WorkExperienceTab = () => (
 				subtitle="Trainee Developer"
 			>
 				<TimelineListItem>
-					Mastered over 40 development courses, excelling in web programming
-					with HTML, CSS, JavaScript, and REST APIs, establishing a strong
-					foundation for software development.
-				</TimelineListItem>
-				<TimelineListItem>
-					Managed tasks in kanban methods using Redmine and Trello, utilizing
-					Git for version control to maintain a legacy product.
-				</TimelineListItem>
-				<TimelineListItem>
-					Collaborated with team members to troubleshoot and debug code,
-					ensuring seamless functionality of software applications.
+					Mastered over 40 development courses within 8 months, excelling in web
+					programming with HTML, CSS, JavaScript, and REST APIs, establishing a
+					strong foundation for software development.
 				</TimelineListItem>
 			</TimelineItem>
 		</Timeline>

@@ -23,8 +23,8 @@ export const EducationTab = () => (
 				imageAlt="Fatec logo"
 				parentStart="Jan 2022"
 				parentEnd="Dec 2022"
-				title="FATEC Garça"
-				subtitle="Technologist, Systems Analysis and Development"
+				title="FATEC"
+				subtitle="Systems Analysis and Development"
 			>
 				<TimelineListItem>
 					Degree in Systems Analysis and Development, where I deepened my
@@ -36,7 +36,7 @@ export const EducationTab = () => (
 				imageAlt="Etec logo"
 				parentStart="jan 2020"
 				parentEnd="Jun 2021"
-				title="ETEC Garça"
+				title="ETEC"
 				subtitle="Technical course, Systems Development"
 			>
 				<TimelineListItem>
